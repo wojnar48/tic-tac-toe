@@ -65,3 +65,64 @@ body {
   margin-top: 40px;
   margin-bottom: 30px;
 }
+
+.restart {
+  cursor: pointer;
+  display: inline-block;
+  background-color: lightpink;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "Stick No Bills", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+#players-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-input {
+  display: flex;
+  align-items: flex-start;
+}
+
+.player-input label {
+  margin-right: 15px;
+}
+
+#start-game-button {
+  width: 200px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.players {
+  display: none;
+}
+
+.game-wrapper {
+  position: absolute;
+  top: 300px;
+}
+
+.active-players {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}

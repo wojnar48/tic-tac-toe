@@ -8,16 +8,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
+    <section class="game-wrapper">
       <h1 class="gameTitle">Tic Tac Toe</h1>
-      <label>Player 1</label><br />
-      <input type="text" id="player1" /><br />
-      <button type="submit" id="buttonPlayer1">submit</button><br />
 
-      <label> Player 2</label><br />
-      <input type="text" id="player2" /><br />
-      <button type="submit" id="buttonPlayer2">submit</button>
-      <div class="container">
+      <div id="players-container">
+        <div id="inputs-container">
+          <div class="player-input">
+            <label>Enter player 1 name:</label>
+            <input type="text" id="player1" placeholder="default: Player 1" />
+            <br />
+          </div>
+          <div class="player-input">
+            <label>Enter player 2 name:</label>
+            <input type="text" id="player2" placeholder="default: Computer"/>
+            <br />
+          </div>
+        </div>
+        
+        <br />
+        <button id="start-game-button" class="restart" type='button'>Start Game</button>
+        <br />
+      </div>
+
+      <div id="active-players" class="active-players">
+      </div>
+
+      <div id="board" class="container hidden">
         <div data-cell-index="0" class="cell"></div>
         <div data-cell-index="1" class="cell"></div>
         <div data-cell-index="2" class="cell"></div>
@@ -28,8 +44,10 @@
         <div data-cell-index="7" class="cell"></div>
         <div data-cell-index="8" class="cell"></div>
       </div>
-      <h2 class="gameStatus"></h2>
-      <button class="restart">Play again?</button>
+      <div id="info" class="hidden">
+        <h2 class="gameStatus"></h2>
+        <button id="restart-button" class="restart hidden">Play again?</button>
+      </div>
     </section>
     <script src="app.js"></script>
   </body>
